@@ -31,6 +31,11 @@ Insira uma opção >
 
 int choice;
 
+int produtos[2][2] = {
+    {"Bolo", 1.5},
+    {"Gomas", 0.3}
+};
+
 void main() {
     while (true) {
         mainMenu();
