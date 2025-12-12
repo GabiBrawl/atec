@@ -27,6 +27,7 @@ Insira uma opção >
 #include <string>
 #include <iostream>
 #include <ctime> // Para a data automática
+#include <iomanip>
 
 using namespace std;
 
@@ -58,10 +59,11 @@ int mainMenu() {
     cout << "                   - Sweet Land -\n\n";
     cout << " Produtos:\n";
 
-	// Tens de substituir aqui esta linha pelo tal loop para escrever todos os produtos no menu
-	printf("Item: %s, Preco: %.2f\n", produtos[0].nome, produtos[0].preco);
+	for (int i = 0; i < 2; ++i) {
 
+	printf("Item: %s, Preco: %.2f\n", produtos[i].nome, produtos[i].preco);
+	}
     cin >> choice;
 
-	return 0;
+	return choice;
 };
